@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  height: 100%;
+  background-color: yellow;
+}
+
+div {
+  margin: 10px;
+  padding: 5px;
+  border: solid 2px green;
+  background-color: orange;
+}
+
+input {
+  margin: 2px;
+}
+
+button {
+  margin: 2px;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-div {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
