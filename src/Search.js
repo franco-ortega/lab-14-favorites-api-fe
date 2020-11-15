@@ -7,7 +7,7 @@ export default class Search extends Component {
         return (
             <div>
                 Search Page
-                <form onSubmit={this.props.handleSubmitSearch}>
+                <form onSubmit={this.props.handleSubmitSearch} className='align-form'>
                     <label>
                         Search: <input onChange={ this.props.handleSearchChange } value={this.searchTerm} />
                     </label>

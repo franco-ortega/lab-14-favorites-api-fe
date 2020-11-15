@@ -5,7 +5,7 @@ export default class Footer extends Component {
         return (
             <div>
                 Sign In
-                <form>
+                <form className='align-form'>
                     <label>
                         Email: <input />
                     </label>
