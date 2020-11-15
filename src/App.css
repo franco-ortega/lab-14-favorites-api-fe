@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  
+  width: vw;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   width: fit-content;
   margin: auto;
   height: 100%;
-  background-color: yellow;
+  background-color: orange;
 }
 
 div {
@@ -37,5 +37,15 @@ button {
 .links-div {
   display: flex;
   flex-direction: row;
+  width: fit-content;
+}
+
+.align-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
   width: fit-content;
 }
