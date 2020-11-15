@@ -1,6 +1,9 @@
 html {
   height: 100%;
   width: vw;
+  display: flex;
+  flex-direction: column  ;
+  justify-content: center;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
 div {
   margin: 10px;
   padding: 5px;
-  border: solid 2px green;
+  /* border: solid 2px green; */
   background-color: orange;
 }
 
@@ -28,7 +31,16 @@ button {
   margin: 2px;
 }
 
-.header-div {
+.main-div{
+  height: 350px;
+  border: solid 2px purple;
+}
+
+.header-div, .footer-div {
+  text-align: center;
+}
+
+.nav-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,4 +60,12 @@ button {
 
 button {
   width: fit-content;
+}
+
+
+@media (min-width: 600px) {
+  .main-div {
+    height: 400px;
+    width: 500px;
+  }
 }

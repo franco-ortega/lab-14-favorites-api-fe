@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Header from './Header.js';
+import Nav from './Nav.js';
 import Home from './Home.js';
 import SignUp from './SignUp.js';
 import SignIn from './SignIn.js';
@@ -32,10 +33,11 @@ handleSubmitSearch = (e) => {
   render() {
     return (
       <div>
-        <div>
+        <Header />
+        <div className='main-div'>
 
                 <Router>
-                  <Header />
+                  <Nav />
                   Search Result: {this.state.searchTerm}
                     <Switch>
                         <Route 
@@ -68,11 +70,8 @@ handleSubmitSearch = (e) => {
                         />
                     </Switch>
                 </Router>
-            </div>
-
+        </div>
         <Footer />
-
-
       </div>
     )
   }
