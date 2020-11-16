@@ -59,7 +59,7 @@ li {
   justify-content: first baseline;
   /* margin: auto; */
   /* border: solid 2px blue; */
-  padding-top: 20%;
+  margin-top: 20%;
 }
 
 .header-div {
@@ -138,6 +138,29 @@ button {
   margin: 3px;
 }
 
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cube-div {
+  margin-top: 20%;
+  padding: 15px;
+  color: lightskyblue;
+  border: solid 3px lightblue;
+}
+
+.trending-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20%;
+}
+
+.trending-button {
+  background-color: lightskyblue;
+  margin: 0 5px;
+}
 
 
 @media (min-width: 600px) {
