@@ -146,9 +146,10 @@ button {
 
 .cube-div {
   margin-top: 20%;
-  padding: 15px;
+  padding: 25px;
   color: lightskyblue;
   border: solid 3px lightblue;
+  border-radius: 15px 15px 25px 125px;
 }
 
 .trending-div {
