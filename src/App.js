@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Header from './Header.js';
-import Nav from './Nav.js';
+//import Nav from './Nav.js';
 import Home from './Home.js';
 import SignUp from './SignUp.js';
 import SignIn from './SignIn.js';
 import Search from './Search.js';
 import Favorites from './Favorites.js';
-import Footer from './Footer.js';
+//import Footer from './Footer.js';
 
 export default class App extends Component {
 
@@ -32,13 +32,15 @@ handleSubmitSearch = (e) => {
 
   render() {
     return (
-      <div>
-        <Header />
-        <div className='main-div'>
-
+      <div className='main-div'>
                 <Router>
-                  <Nav />
-                  Search Result: {this.state.searchTerm}
+                <div className='shell-div'>
+                <Header
+                handleSearchChange={this.handleSearchChange}
+                handleSubmitSearch={this.handleSubmitSearch}
+                searchTerm={this.state.searchTerm}
+                />
+                <div className='switch-div'>
                     <Switch>
                         <Route 
                             path="/" 
@@ -69,9 +71,11 @@ handleSubmitSearch = (e) => {
                           render={(routerProps) => <Favorites {...routerProps} />} 
                         />
                     </Switch>
+                  </div>
+                  </div>
                 </Router>
-        </div>
-        <Footer />
+        
+        {/* <Footer /> */}
       </div>
     )
   }

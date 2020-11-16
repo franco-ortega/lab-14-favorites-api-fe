@@ -1,44 +1,90 @@
-html {
-  height: 100%;
-  width: vw;
-  display: flex;
-  flex-direction: column  ;
-  justify-content: center;
+* {
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: fit-content;
-  margin: auto;
-  height: 100%;
-  background-color: orange;
+  /* width: fit-content; */
+  /* margin: auto; */
+  /* height: 100vh; */
+  background-color: rgb(28, 46, 46);
+  color: white;
 }
 
 div {
-  margin: 10px;
-  padding: 5px;
+  /* margin: 10px;
+  padding: 5px; */
   /* border: solid 2px green; */
-  background-color: orange;
+}
+
+a {
+  color: lightgray;
 }
 
 input {
   margin: 2px;
 }
 
-button {
-  margin: 2px;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .main-div{
-  height: 350px;
-  border: solid 2px purple;
+  /* margin: auto; */
+  height: 100vw;
+  width: 100vw;
+  /* border: solid 2px purple; */
 }
 
-.header-div, .footer-div {
-  text-align: center;
+.shell-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  width: 100vw;
 }
+
+.switch-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first baseline;
+  /* margin: auto; */
+  /* border: solid 2px blue; */
+  padding-top: 20%;
+}
+
+.header-div {
+  background-color: black;
+  /* color: whitesmoke; */
+  text-align: center;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  /* align-self: center; */
+  justify-content: space-between;
+  padding: 10px;
+  width: 100vw;
+}
+
+.header-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end
+}
+
+.header-search-form-div {
+  align-self: center;
+}
+
 
 .nav-div {
   display: flex;
@@ -52,20 +98,69 @@ button {
   width: fit-content;
 }
 
-.align-form {
+.signin-div, .signup-div {
+  text-align: center;
+}
+
+.search-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-button {
-  width: fit-content;
+
+.signin-form, .signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5px;
 }
+
+button {
+  /* height: fit-content; */
+  width: fit-content;
+  align-self: center;
+}
+
+button {
+  margin: 2px;
+}
+
+.search-button > a, .sign-in-button > a, .sign-up-button > a {
+  color: black;
+}
+
+.search-button > a:link, .sign-in-button > a:link, .sign-up-button > a:link {
+  text-decoration: none;
+}
+
+.signin-form-button, .signup-form-button {
+  margin: 3px;
+}
+
 
 
 @media (min-width: 600px) {
   .main-div {
-    height: 400px;
-    width: 500px;
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .header-div {
+    background-color: black;
+    /* color: whitesmoke; */
+    text-align: center;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100vw;
+  }
+  
+
+  .search-form {
+    display: flex;
+    flex-direction: row;
   }
 }

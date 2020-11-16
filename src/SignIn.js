@@ -3,16 +3,16 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
     render() {
         return (
-            <div>
+            <div className='signin-div'>
                 Sign In
-                <form className='align-form'>
+                <form className='signin-form'>
                     <label>
                         Email: <input />
                     </label>
                     <label>
                         Password: <input />
                     </label>
-                    <button>
+                    <button className='signin-form-button'>
                         Sign In
                     </button>
                 </form>
